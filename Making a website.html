@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Making a website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/main style.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+  </head>
+  <!-- Nav --> <body>
+    <nav id="nav">
+      <ul>
+        <li><a href="Making%20a%20website.html">Home</a></li>
+      </ul>
+    </nav>
+    <!-- Banner -->
+    <section id="banner">
+      <header>
+        <h2>Hi. You're looking at <strong>Programmer's World</strong>.</h2>
+        <p> A responsive site by Umar Mohammad Nadeem. Built with HTML5/CSS3. </p>
+		<br>
+		<div><a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">See what you can create using programming
+			languages</a> </div>
+        <p> </p>
+      </header>
+    </section>
+    <!-- Main -->
+    <div class="wrapper style2">
+      <article id="main" class="container special">
+        <header>
+         <p><section id="features"></section><span style="color: #010201;">Learn HTML Using Notepad&nbsp; Web
+              pages can be created and modified by using professional HTML
+              editors. However, for learning HTML we recommend a simple text
+              editor like Notepad (PC). We believe in that using a simple text
+              editor is a good way to learn HTML. Follow the steps below to
+              create your first web page with Notepad. </span></p>
+          <span style="color: #010201;"> </span>
+          <p><span style="color: #010201;">Step 1: Open Notepad (PC) Windows 8
+              or later: Open the Start Screen (the window symbol at the bottom
+              left on your screen). Type Notepad. Windows 7 or earlier: Open
+              Start &gt; Programs &gt; Accessories &gt; Notepad.<br>
+            </span> </p>
+          <span style="color: #010201;"> </span>
+          <p><span style="color: #010201;">Step 2: Write Some HTML Write or copy
+              the following HTML code into Notepad: </span><img src="assets/WhatsApp%20Image%202021-08-18%20at%205.58.49%20PM%20%281%29.jpeg">
+            <br>
+            <span style="color: #010201;">Step 3: Save the HTML Page Save the
+              file on your computer. Select File &gt; Save as in the Notepad
+              menu. Name the file "index.htm" and set the encoding to UTF-8
+              (which is the preferred encoding for HTML files). Tip: You can use
+              either .htm or .html as file extension. There is no difference, it
+              is up to you. </span><img src="assets/WhatsApp Image 2021-08-18 at 5.58.49 PM (2).jpeg">
+            <br>
+            <span style="color: #010201;">Step 4: View the HTML Page in Your
+              Browser Open the saved HTML file in your favorite browser (double
+              click on the file, or right-click - and choose "Open with"). The
+              result will look much like this: <img src="assets/WhatsApp Image 2021-08-18 at 5.58.49 PM.jpeg"></span>
+          </p>
+        </header>
+      </article>
+    </div>
+  </body>
+</html>
